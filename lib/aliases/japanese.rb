@@ -48,7 +48,7 @@ module Aliases
       local_variables: [:ローカル変数名達, :局所変数名達],
       loop: :ずっと,
       open: [:開く, :開ける],
-      p: [:見てみる, :要するに],
+      p: [:見てみる, :目視確認],
       print: :出力,
       printf: :整形して出力,
       format: :整形,
@@ -117,6 +117,20 @@ module Aliases
       initialize: :初期化時,
       initialize_copy: :複製初期化時,
       remove_instance_variable: :インスタンス変数の削除,
+    }
+    
+    Numeric = {
+      ceil: :繰り上げ,
+    }
+
+    Integer = {
+      succ: :'次',
+      odd?: :奇数?,
+      even?: :偶数?,
+    }
+    
+    Float = {
+      '*' => :かける,
     }
   
   end
